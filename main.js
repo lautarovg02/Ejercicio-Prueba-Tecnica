@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
      /** 
-    * @description Function in charge of showing the certificates in the table .
+    * @description Function in charge of showing the certificates in the table
     * @param {Array}  certificates - List of certificates to display. 
     */
     function showCertificates(certificates) {
@@ -103,7 +103,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
     
      /** 
-    * @author Lautaro Gallo https://github.com/lautarovg02
     * @description function in charge of managementing the submit event of the form and filtering the certificates. 
     * @param {Array} certificates - List of all certificates to filter.
     */
@@ -125,6 +124,11 @@ document.addEventListener("DOMContentLoaded", async () => {
             divMsgError.classList.remove('d-none');
         }
     }
+
+      /** 
+    * @description Shows all the certificates and reset the filters.. 
+    * @param {Array} certificates - List of all certificates.
+    */
 
     function resetFilters(certificates) {
         form.reset();
